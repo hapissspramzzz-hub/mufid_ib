@@ -94,32 +94,37 @@
 
 .profile-copy h2 {
   margin: 10px 0;
-  font-size: clamp(28px, 3vw, 38px);
+  font-size: clamp(27px, 2.5vw, 32px);
 }
 
 .profile-story {
-  font-size: 12px;
-  line-height: 1.55;
+  max-width: none;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .profile-story p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .profile-visual {
   width: auto;
   min-height: 0;
   overflow: visible;
+  order: 0;
 }
 
 .profile-photo {
   width: 145px;
   height: 180px;
   padding: 7px 7px 28px;
+  border-radius: 22px;
+  transform: none;
 }
 
 .profile-photo:after {
   inset: 7px 7px 28px;
+  border-radius: 16px;
 }
 
 .photo-code {
@@ -280,6 +285,8 @@
   }
 
   .profile-grid {
+    display: grid;
+    flex-direction: initial;
     grid-template-columns: minmax(0, 1fr) 140px;
     gap: 16px;
     padding: 25px 0 10px;
@@ -394,6 +401,8 @@
   }
 
   .profile-grid {
+    display: grid;
+    flex-direction: initial;
     grid-template-columns: minmax(0, 1fr) 112px;
     gap: 10px;
   }
