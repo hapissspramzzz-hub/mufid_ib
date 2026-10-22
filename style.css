@@ -30,4 +30,5 @@ main{background-color:#1c1d1b;background-image:radial-gradient(rgba(244,240,229,
 @media(max-width:800px){.hero{padding:12px 3vw 0}.board{height:850px;min-height:850px}.thread-bridge{height:52px;flex-basis:52px}.profile{padding:15px 5vw 24px}.profile-grid{padding-top:42px}.experience-thread{height:52px}.experience{padding:30px 5vw 55px}}
 @media(max-width:560px){.board{height:870px;min-height:870px;background-size:21px 21px}.profile{padding:12px 5vw 20px}.profile-grid{padding-top:38px}.profile-strings{opacity:.8}.experience{padding-top:25px;background-size:21px 21px}}
 @media(max-width:800px){.profile-strings{transform:scaleX(.65);transform-origin:top left}}
-.experience{background-image:none}.experience-strings path{stroke-width:2.2}.experience-strings path{d:none}
+.experience{background-image:none}.experience-strings path{stroke-width:2.2}.experience-thread .connector-wide{display:block}.experience-thread .connector-narrow{display:none}@media(max-width:800px){.experience-thread .connector-wide{display:none}.experience-thread .connector-narrow{display:block}}
+
