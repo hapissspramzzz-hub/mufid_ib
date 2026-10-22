@@ -65,3 +65,17 @@ board.addEventListener('pointerleave', () => {
 new ResizeObserver(paintDots).observe(board);
 paintDots();
 
+
+const warningDialog = document.querySelector('.warning-dialog');
+const warningMessage = warningDialog.querySelector('.warning-message');
+const warningClose = warningDialog.querySelector('.warning-close');
+document.querySelectorAll('.case-photo').forEach((photo) => {
+  photo.addEventListener('click', () => {
+    warningMessage.textContent = photo.dataset.warning || 'PERINGATAN: Jangan sentuh barang bukti ini.';
+    warningDialog.showModal();
+  });
+});
+warningClose.addEventListener('click', () => warningDialog.close());
+warningDialog.addEventListener('click', (event) => {
+  if (event.target === warningDialog) warningDialog.close();
+});
