@@ -20,6 +20,11 @@
   width: min(100%, 900px);
 }
 
+.experience-thread {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
 .board .strings path {
   stroke: #a72d37;
   stroke-width: 2.4;
