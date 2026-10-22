@@ -1,0 +1,435 @@
+/* Keep the three sketch sections compact and stacked on one centered column. */
+.hero {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 20px 24px 0;
+}
+
+.board {
+  height: clamp(410px, 36vw, 470px);
+  min-height: 0;
+  max-width: 900px;
+}
+
+.board .strings {
+  inset: 0;
+  height: 100%;
+}
+
+.evidence {
+  width: clamp(125px, 15vw, 170px);
+}
+
+.photo-frame {
+  height: clamp(85px, 10vw, 115px);
+}
+
+.evidence-a {
+  left: 7%;
+  top: 13%;
+}
+
+.evidence-b {
+  left: 41%;
+  top: 11%;
+}
+
+.evidence-c {
+  right: 7%;
+  top: 13%;
+}
+
+.evidence-d {
+  left: 22%;
+  top: 52%;
+  bottom: auto;
+}
+
+.evidence-e {
+  left: 51%;
+  right: auto;
+  top: 52%;
+  bottom: auto;
+}
+
+.board-note {
+  right: 5%;
+  top: 61%;
+  bottom: auto;
+  width: 150px;
+  padding: 9px 12px;
+}
+
+.board-note p {
+  margin: 7px 0;
+  font-size: 12px;
+}
+
+.profile {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 18px 24px 24px;
+}
+
+.profile .dot-canvas {
+  opacity: 0.75;
+}
+
+.profile-grid {
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 14px 12px;
+}
+
+.profile-copy {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 22px 22px;
+}
+
+.profile-copy h2 {
+  margin: 10px 0;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.profile-story {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.profile-story p {
+  margin: 10px 0;
+}
+
+.profile-visual {
+  width: auto;
+  min-height: 0;
+  overflow: visible;
+}
+
+.profile-photo {
+  width: 145px;
+  height: 180px;
+  padding: 7px 7px 28px;
+}
+
+.profile-photo:after {
+  inset: 7px 7px 28px;
+}
+
+.photo-code {
+  bottom: 7px;
+  left: 10px;
+  font-size: 6px;
+}
+
+.profile-caption {
+  width: 155px;
+  margin-top: 10px;
+  font-size: 6px;
+}
+
+.tape {
+  top: 5%;
+  right: 4%;
+  width: 55px;
+  height: 16px;
+}
+
+.profile-strings {
+  transform: none;
+  opacity: 0.9;
+}
+
+.experience {
+  width: min(100%, 960px);
+  min-height: 0;
+  margin: 0 auto;
+  padding: 26px 30px 40px;
+}
+
+.desk-heading {
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+
+.case-wall {
+  width: 100%;
+  height: 290px;
+}
+
+.case-photo {
+  width: clamp(105px, 13vw, 145px);
+  padding: 6px 6px 22px;
+}
+
+.case-photo-image {
+  height: 88px;
+}
+
+.case-photo-caption {
+  padding-top: 6px;
+  font-size: 6px;
+}
+
+.case-photo-one {
+  left: 7%;
+  top: 9%;
+}
+
+.case-photo-two {
+  left: 30%;
+  top: 4%;
+}
+
+.case-photo-three {
+  right: 7%;
+  top: 8%;
+}
+
+.case-photo-four {
+  left: 19%;
+  bottom: 5%;
+}
+
+.case-photo-five {
+  right: 19%;
+  bottom: 4%;
+}
+
+.last-trace-note {
+  left: calc(50% - 75px);
+  top: 38%;
+  width: 150px;
+  min-height: 85px;
+  padding: 10px;
+}
+
+.last-trace-note strong {
+  font-size: 17px;
+}
+
+.desk-note {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 14px 14px 0;
+  }
+
+  .board {
+    height: 610px;
+  }
+
+  .board .strings .wall-strings-wide {
+    display: none;
+  }
+
+  .board .strings .wall-strings-narrow {
+    display: block;
+  }
+
+  .evidence {
+    width: clamp(116px, 30vw, 150px);
+  }
+
+  .evidence-a {
+    left: 3%;
+    top: 10%;
+  }
+
+  .evidence-b {
+    left: calc(50% - 62px);
+    top: 28%;
+  }
+
+  .evidence-c {
+    right: 3%;
+    top: 10%;
+  }
+
+  .evidence-d {
+    left: 4%;
+    top: auto;
+    bottom: 8%;
+  }
+
+  .evidence-e {
+    left: auto;
+    right: 4%;
+    top: auto;
+    bottom: 8%;
+  }
+
+  .board-note {
+    left: calc(50% - 72px);
+    right: auto;
+    top: 57%;
+    width: 144px;
+  }
+
+  .profile {
+    padding: 15px 18px 22px;
+  }
+
+  .profile-grid {
+    grid-template-columns: minmax(0, 1fr) 140px;
+    gap: 16px;
+    padding: 25px 0 10px;
+  }
+
+  .profile-copy {
+    padding: 17px 16px;
+  }
+
+  .profile-copy h2 {
+    font-size: 27px;
+  }
+
+  .profile-story {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .profile-photo {
+    width: 122px;
+    height: 155px;
+  }
+
+  .profile-caption {
+    width: 130px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .experience {
+    padding: 22px 18px 32px;
+  }
+
+  .case-wall {
+    height: 380px;
+  }
+
+  .case-photo {
+    width: clamp(105px, 30vw, 140px);
+  }
+
+  .case-photo-image {
+    height: 82px;
+  }
+
+  .case-photo-one {
+    left: 1%;
+    top: 7%;
+  }
+
+  .case-photo-two {
+    left: auto;
+    right: 1%;
+    top: 25%;
+  }
+
+  .case-photo-three {
+    left: calc(50% - 65px);
+    right: auto;
+    top: 43%;
+  }
+
+  .case-photo-four {
+    left: 2%;
+    bottom: 3%;
+  }
+
+  .case-photo-five {
+    right: 2%;
+    bottom: 3%;
+  }
+
+  .last-trace-note {
+    left: calc(50% - 66px);
+    top: 38%;
+    width: 132px;
+    min-height: 74px;
+  }
+}
+
+@media (max-width: 420px) {
+  .board {
+    height: 560px;
+  }
+
+  .evidence {
+    width: 112px;
+  }
+
+  .photo-frame {
+    height: 78px;
+  }
+
+  .evidence-caption {
+    padding: 6px 8px 8px;
+  }
+
+  .evidence-caption b {
+    font-size: 9px;
+  }
+
+  .evidence-caption small,
+  .evidence-caption > span {
+    font-size: 6px;
+  }
+
+  .board-note {
+    top: 57%;
+    left: calc(50% - 65px);
+    width: 130px;
+    padding: 8px;
+  }
+
+  .profile-grid {
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 10px;
+  }
+
+  .profile-copy {
+    padding: 15px 12px;
+  }
+
+  .profile-copy h2 {
+    font-size: 23px;
+  }
+
+  .profile-story {
+    font-size: 10px;
+  }
+
+  .profile-photo {
+    width: 105px;
+    height: 135px;
+  }
+
+  .profile-caption {
+    width: 112px;
+    font-size: 5px;
+  }
+
+  .desk-heading {
+    font-size: 7px;
+    letter-spacing: 0.08em;
+  }
+
+  .case-photo {
+    width: 108px;
+  }
+
+  .case-photo-caption {
+    font-size: 5px;
+  }
+}
