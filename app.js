@@ -64,3 +64,4 @@ board.addEventListener('pointerleave', () => {
 });
 new ResizeObserver(paintDots).observe(board);
 paintDots();
+
