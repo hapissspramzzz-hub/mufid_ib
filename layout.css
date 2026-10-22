@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.thread-bridge {
+  width: min(100%, 900px);
+}
+
 .board .strings path {
   stroke: #a72d37;
   stroke-width: 2.4;
