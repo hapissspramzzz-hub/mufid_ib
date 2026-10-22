@@ -285,14 +285,14 @@
   }
 
   .profile-grid {
-    display: grid;
-    flex-direction: initial;
-    grid-template-columns: minmax(0, 1fr) 140px;
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     padding: 25px 0 10px;
   }
 
   .profile-copy {
+    width: min(100%, 570px);
     padding: 17px 16px;
   }
 
@@ -308,6 +308,10 @@
   .profile-photo {
     width: 122px;
     height: 155px;
+  }
+
+  .profile-visual {
+    order: -1;
   }
 
   .profile-caption {
@@ -401,10 +405,7 @@
   }
 
   .profile-grid {
-    display: grid;
-    flex-direction: initial;
-    grid-template-columns: minmax(0, 1fr) 112px;
-    gap: 10px;
+    gap: 14px;
   }
 
   .profile-copy {
